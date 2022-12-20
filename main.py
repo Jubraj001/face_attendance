@@ -39,9 +39,7 @@ def check_haarcascadefile():
     else:
         mess._show(title='Some file missing', message='Please contact us for help')
         window.destroy()
-
 ###################################################################################
-
 def save_pass():
     assure_path_exists("TrainingImageLabel/")
     exists1 = os.path.isfile("TrainingImageLabel\psd.txt")
@@ -75,7 +73,6 @@ def save_pass():
     master.destroy()
 
 ###################################################################################
-
 def change_pass():
     global master
     master = tk.Tk()
@@ -105,7 +102,6 @@ def change_pass():
     master.mainloop()
 
 #####################################################################################
-
 def psw():
     assure_path_exists("TrainingImageLabel/")
     exists1 = os.path.isfile("TrainingImageLabel\psd.txt")
@@ -130,7 +126,6 @@ def psw():
         mess._show(title='Wrong Password', message='You have entered wrong password')
 
 ######################################################################################
-
 def clear():
     txt.delete(0, 'end')
     res = "1)Take Images  >>>  2)Save Profile"
@@ -143,7 +138,6 @@ def clear2():
     message1.configure(text=res)
 
 #######################################################################################
-
 def TakeImages():
     check_haarcascadefile()
     columns = ['SERIAL NO.', '', 'ID', '', 'NAME']
@@ -205,7 +199,6 @@ def TakeImages():
             message.configure(text=res)
 
 ########################################################################################
-
 def TrainImages():
     check_haarcascadefile()
     assure_path_exists("TrainingImageLabel/")
@@ -365,7 +358,7 @@ mont={'01':'January',
       '12':'December'
       }
 
-######################################## GUI FRONT-END ###########################################
+######################################## GUI FRONT-END in Tkinter ###########################################
 
 window = tk.Tk()
 window.geometry("1680x720")
