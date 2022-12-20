@@ -434,7 +434,6 @@ if exists:
 else:
     res = 0
 message.configure(text='Total Registrations till now  : '+str(res))
-
 ##################### MENUBAR #################################
 
 menubar = tk.Menu(window,relief='ridge')
